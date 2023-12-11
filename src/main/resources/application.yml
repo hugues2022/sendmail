@@ -1,0 +1,29 @@
+server:
+  port: 80
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    username: hgsolution2000@gmail.com
+    password: HNg2000@#_
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mail_db
+    username: root
+    password: "@syst2016"
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
